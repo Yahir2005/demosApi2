@@ -8,11 +8,11 @@ const Examen = sequelize.define('Examen', {
     autoIncrement: true,
   },
   Nombre:{
-    type: DataTypes.STRING(100),
+    type: DataTypes.STRING(300),
     unique: true,
   },
   Notas: {
-    type: DataTypes.STRING(100),
+    type: DataTypes.STRING(400),
     defaultValue: '',
 
   },
@@ -22,7 +22,6 @@ const Examen = sequelize.define('Examen', {
    },
    CategoriaId: {
     type: DataTypes.INTEGER,
-    allowNull: false,
 
 
    }
@@ -32,3 +31,5 @@ const Examen = sequelize.define('Examen', {
   tableName: 'Examen',
   timestamps: false,
 });
+
+module.exports = Examen;
