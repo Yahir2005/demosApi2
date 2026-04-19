@@ -10,6 +10,7 @@ const Examen = sequelize.define('Examen', {
   Nombre:{
     type: DataTypes.STRING(300),
     unique: true,
+    
   },
   Notas: {
     type: DataTypes.STRING(400),
@@ -17,7 +18,7 @@ const Examen = sequelize.define('Examen', {
 
   },
   Activo: {
-    type:DataTypes.BOOLEAN,
+    type: DataTypes.BOOLEAN,
     defaultValue: true,
    },
    CategoriaId: {
